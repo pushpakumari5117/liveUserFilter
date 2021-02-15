@@ -1,0 +1,83 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f4eeff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-family: sans-serif;
+}
+.container {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 500px;
+}
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+.header {
+  background-color: #424874;
+  color: white;
+  padding: 30px 20px;
+}
+.header input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  width: 100%;
+}
+.header input:focus {
+  outline: none;
+}
+.user-list {
+  background-color: #dcd6f7;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 450px;
+  overflow-y: auto;
+}
+.user-list li{
+  display: flex;
+  padding: 20px;
+}
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 70px;
+  width: 70px;
+}
+.user-list .user-info {
+  margin-left: 10px;
+}
+.user-list .user-info h4{
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+.user-list .user-info p {
+  font-size: 12px;
+  font-size: 1rem;
+}
+.user-list li:not(:last-of-type){
+  border-bottom: 1px solid #a6b1e1;
+}
+.user-list li.hide {
+  display: none;
+}
